@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="./styles.css" />
+
+    <title>Decodificador - Challege 01</title>
+</head>
+<body class="container">
+    <header class="header">
+        <img class="logo" src="./imgs/logo-Decodificador.png" alt="Logo Decodificador" />
+    </header>
+    <main class="container-main">
+        <form class="form" action="#">
+            <textarea type="text" placeholder="Digite seu texto aqui" name="insertText" id="insertText"></textarea>
+            <div class="container-alert">
+                <img class="iconAlert" src="./imgs/icon-alert.png" alt="Alerta" />
+                <span class="textAlert">Apenas letras minúsculas e sem acento.</span>
+            </div>
+            <div class="container-btn">
+                <button class="btn-criptografar" type="submit">Criptografar</button>
+                <button class="btn-decriptografar" type="submit">Decriptografar</button>
+            </div>
+        </form>
+    </main>
+    <div class="containerResult">
+        <p class="texto-convertido desable"></p>
+        <img class="decodificador-empty" src="./imgs/decodificador-empty.png" alt="Decodificador vazio" />
+        <h2 class="title-decodificador-empty">Nenhuma mensagem encontrada</h2>
+        <p class="description-decodificador-empty">Digite um texto que você deseja criptografar ou descriptografar.</p>
+        <button class="btn-copiar desable">Copiar</button>
+    </div>
+    <footer>
+        <span>Developed by - Carlos Lins</span>
+    </footer>
+
+    <script src="./index.js"></script>
+</body>
+</html>
